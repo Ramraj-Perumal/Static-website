@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar" id="home">
+        <h1 class="logo">Let's
+            <i class="fa fa-paper-plane fa-bounce" style="color: #d4ff00;"></i>
+            Go
+        </h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#tour">Tours</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="ctn"><a style="color: #001216;" href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-xl" style="color: #dfe4e5;"></i>
+        </div>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Life is Beautiful Gift</h2>
+            <div class="line"></div>
+            <h1>Explore the Amazing World</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Tours -->
+    <section class="tour" id="tour">
+        <div class="title">
+            <h1>Upcoming Tour Plans</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./images/tour1.jpeg" alt="" height="400px" width="500px">
+                <h4>Everest Camp Trek</h4>
+                <p>There are two base camps on Mount Everest, on opposite sides of the mountains: South Base Camp is in Nepal at an altitude of 5,364 metres, while North Base Camp is in China at 5,150 metres.</p>
+                <a class="ctn" href="">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./images/tour2.jpeg" alt="" height="400px" width="500px">
+                <h4>Walking Holidays</h4>
+                <p>There are two base camps on Mount Everest, on opposite sides of the mountains: South Base Camp is in Nepal at an altitude of 5,364 metres, while North Base Camp is in China at 5,150 metres.</p>
+                <a class="ctn" href="">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore --->
+    <section class="explore" id="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <p>Explore the world in your way Create memories that you won't forget You only live once, so don't waste your time Please don't waste your time.</p>
+            <a class="ctn" href="">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About --->
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col content-col">
+                <h1>ABOUT OUR TOURS & DESTINATION</h1>
+                <div class="line"></div>
+                <p>Explore the world in your way Create memories that you won't forget You only live once, so don't waste your time Please don't waste your time.</p>
+                <a class="ctn" href="">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="images/abt1.jpeg" alt="">
+                    <img src="images/abt2.jpeg" alt="">
+                    <img src="images/abt3.jpeg" alt="">
+                    <img src="images/abt4.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+        <h1>Contact Us</h1>
+        </div>
+        <p style="text-align: left; color: #dfe4e5; margin-top: 20px;">Submit the form below to get in touch with us</p>
+        <form action="">
+            <input type="text" placeholder="Name"> <br>
+            <input type="number" placeholder="Mobile number"> <br>
+            <input type="email" placeholder="Email"> <br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea> <br>
+            <button class="cBtn">Submit</button>
+        </form>
+        <hr>
+    </section>
+
+    <!-----Footer-->
+    <section class="footer" id="footer">
+        <p>12/263 Seventh Avenue, CH 1098, Chennai City, IN | Phone: 908-7654-320 | letsgo@gmail.com</p>
+        <p>Copyright © 2023 Lets <span><i class="fa fa-paper-plane fa-bounce" style="color: #d4ff00;"></i></span> Go</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navLinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener("click", () => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+
+</html>
